@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mieszkania Properties Ltd — AI Solutions for Real Estate Investing</title>
+  <meta name="description" content="Mieszkania Properties Ltd builds advanced AI solutions for real estate investors—deal sourcing, underwriting, portfolio intelligence and automation.">
+  <meta property="og:title" content="Mieszkania Properties Ltd — AI Solutions for Real Estate Investing">
+  <meta property="og:description" content="Advanced AI solutions for real estate investors. Deal sourcing, underwriting, portfolio intelligence and automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta name="theme-color" content="#0b132b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b132b'/%3E%3Ctext x='50' y='58' font-size='54' text-anchor='middle' fill='white' font-family='Arial, Helvetica, sans-serif'%3EMP%3C/text%3E%3C/svg%3E">
+  <style>
+    :root{
+      --bg:#0b132b;
+      --bg-soft:#0f1b3d;
+      --card:#ffffff;
+      --text:#0c0c0d;
+      --muted:#5a6275;
+      --brand:#3a86ff;
+      --brand-2:#7bffb7;
+      --ring: rgba(58,134,255,.3);
+      --max: 1200px;
+      --radius:14px;
+      --shadow: 0 10px 25px rgba(0,0,0,.07);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji; color:var(--text); background:#f6f7fb}
+    a{color:var(--brand); text-decoration: none}
+    a:hover{text-decoration: underline}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+    header{
+      background: radial-gradient(1200px 600px at 20% -10%, var(--brand-2) 0%, transparent 60%), 
+                  radial-gradient(1000px 500px at 100% 0%, rgba(58,134,255,.35) 0%, transparent 60%),
+                  var(--bg);
+      color:#fff;
+      position:relative;
+      overflow:hidden;
+    }
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:20px 0}
+    .logo{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.2px}
+    .logo-badge{
+      width:36px; height:36px; border-radius:9px; display:grid; place-items:center; background:#ffffff10; border:1px solid #ffffff22; backdrop-filter: blur(6px);
+    }
+    .logo-badge svg{width:22px; height:22px}
+    .hero{display:grid; grid-template-columns: 1.2fr 1fr; gap:36px; padding:40px 0 72px}
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+    }
+    h1{font-size: clamp(34px, 3.6vw, 58px); line-height:1.06; margin: 10px 0 18px}
+    p.lead{font-size: clamp(18px, 2vw, 22px); opacity:.92; margin:0 0 24px}
+    .cta{display:flex; gap:14px; flex-wrap:wrap; margin-top:10px}
+    .btn{
+      display:inline-flex; align-items:center; gap:10px; padding:14px 18px; border-radius:12px; font-weight:600; border:1px solid transparent; background:var(--brand); color:#fff; box-shadow: 0 10px 25px rgba(58,134,255,.25);
+    }
+    .btn.secondary{background:#ffffff10; color:#fff; border-color:#ffffff33}
+    .btn:focus, .btn:hover{outline:none; filter:brightness(1.05)}
+    .card{
+      background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow); border:1px solid #e7e8ef
+    }
+    .illus{
+      aspect-ratio: 4/3; width:100%; border-radius:var(--radius); overflow:hidden; background: linear-gradient(135deg, #13294b, #19324f);
+      border:1px solid #263b63;
+      position:relative;
+    }
+    .grid{display:grid; gap:20px}
+    .grid-3{grid-template-columns: repeat(3, 1fr)}
+    @media (max-width: 960px){ .grid-3{grid-template-columns:1fr} }
+    .section{padding:72px 0}
+    .section h2{font-size: clamp(26px, 3vw, 36px); margin:0 0 16px}
+    .muted{color:var(--muted)}
+    .feature{padding:22px; display:flex; flex-direction:column; gap:10px}
+    .feature h3{margin:0; font-size:20px}
+    .feature p{margin:0; color:#3c4053}
+    .kpi{display:flex; align-items:baseline; gap:8px; margin-top:8px}
+    .kpi b{font-size:28px}
+    .pill{display:inline-flex; gap:8px; align-items:center; padding:10px 12px; border-radius:999px; background:#ffffff; color:#1b2337; border:1px solid #e7e8ef; box-shadow:var(--shadow)}
+    .stack{display:flex; gap:12px; flex-wrap:wrap}
+    .split{display:grid; grid-template-columns:1fr 1fr; gap:24px}
+    @media (max-width: 900px){ .split{grid-template-columns:1fr} }
+    .contact-card{padding:26px}
+    .footer{padding:28px 0; color:#95a0b8; font-size:14px; border-top:1px solid #e6e9f4; background:#fafbfe}
+    .map-link{display:inline-flex; gap:8px; align-items:center}
+    .illus svg{position:absolute; inset:0; width:100%; height:100%; opacity:.9}
+    .badge{font-size:12px; font-weight:700; letter-spacing:.3px; text-transform:uppercase; color:#cfe3ff; display:inline-flex; gap:10px; align-items:center; background:#ffffff10; border:1px solid #ffffff20; padding:8px 12px; border-radius:999px}
+    .sr-only{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0}
+    form input, form textarea{
+      width:100%; padding:14px 14px; border-radius:12px; border:1px solid #dfe3f0; background:#fff; font: inherit;
+    }
+    form textarea{min-height:110px; resize:vertical}
+    form .row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width:680px){ form .row{grid-template-columns:1fr} }
+    form button{cursor:pointer}
+    .legal{font-size:12px; color:#7581a3}
+    /* focus styles */
+    a:focus, button:focus, input:focus, textarea:focus{outline:2px solid var(--ring); outline-offset:2px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <div class="logo" aria-label="Mieszkania Properties Ltd">
+          <span class="logo-badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo">
+              <path d="M3 12L12 3l9 9" stroke="white" stroke-width="2"/>
+              <path d="M5 10v10h14V10" stroke="white" stroke-width="2"/>
+              <path d="M9 20v-6h6v6" stroke="white" stroke-width="2"/>
+            </svg>
+          </span>
+          <span>Mieszkania Properties Ltd</span>
+        </div>
+        <div class="stack">
+          <a class="pill" href="#solutions">Solutions</a>
+          <a class="pill" href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <div>
+          <span class="badge">Advanced AI for Real Estate Investing</span>
+          <h1>Smarter deal flow, faster underwriting, and portfolio intelligence—powered by AI.</h1>
+          <p class="lead">We build outcome‑driven AI systems for real estate investors: from sourcing and scoring assets to automated underwriting, risk signals, and portfolio optimization.</p>
+          <div class="cta">
+            <a class="btn" href="#contact" aria-label="Book a consultation">Book a consultation</a>
+            <a class="btn secondary" href="#solutions" aria-label="Explore our solutions">Explore solutions</a>
+          </div>
+          <div class="stack" style="margin-top:18px">
+            <span class="pill" aria-label="Model types used">LLMs</span>
+            <span class="pill" aria-label="Data sources">Market & macro data</span>
+            <span class="pill" aria-label="Integrations">Sheets & CRMs</span>
+            <span class="pill" aria-label="Security">Private by design</span>
+          </div>
+        </div>
+        <div class="card illus" aria-hidden="true">
+          <!-- decorative illustration -->
+          <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#7bffb7"/>
+                <stop offset="1" stop-color="#3a86ff"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="1" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#ffffff"/>
+                <stop offset="1" stop-color="#9fc1ff"/>
+              </linearGradient>
+            </defs>
+            <g opacity=".18">
+              <circle cx="120" cy="100" r="90" fill="url(#g1)"/>
+              <circle cx="680" cy="160" r="110" fill="url(#g2)"/>
+              <circle cx="400" cy="520" r="140" fill="url(#g1)"/>
+            </g>
+            <g opacity=".28" stroke="white">
+              <rect x="140" y="180" width="520" height="300" rx="18" fill="#0f1b3d" stroke="#2c447a"/>
+              <g transform="translate(170,210)" stroke="#6da6ff" opacity=".9">
+                <polyline points="0,160 80,120 140,140 220,100 300,110 360,80" fill="none" stroke-width="2"/>
+                <circle cx="80" cy="120" r="3" fill="#7bffb7"/>
+                <circle cx="140" cy="140" r="3" fill="#7bffb7"/>
+                <circle cx="220" cy="100" r="3" fill="#7bffb7"/>
+                <circle cx="300" cy="110" r="3" fill="#7bffb7"/>
+                <circle cx="360" cy="80" r="3" fill="#7bffb7"/>
+              </g>
+              <g transform="translate(170,210)" opacity=".6">
+                <rect x="0" y="0" width="380" height="26" rx="6" fill="#182549"/>
+                <rect x="10" y="6" width="120" height="14" rx="4" fill="#2a3b68"/>
+                <rect x="140" y="6" width="80" height="14" rx="4" fill="#2a3b68"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="solutions">
+      <div class="container">
+        <h2>Solutions that compound your edge</h2>
+        <p class="muted">Designed for professional investors, family offices, and operators who want speed, consistency, and differentiated insight.</p>
+        <div class="grid grid-3" style="margin-top:20px">
+          <div class="card feature">
+            <h3>Deal Sourcing & Scoring</h3>
+            <p>Aggregate listings, off‑market leads, and proprietary signals. Rank opportunities in real time with configurable strategies.</p>
+            <div class="kpi"><b>10×</b><span class="muted">more prospects assessed</span></div>
+          </div>
+          <div class="card feature">
+            <h3>AI Underwriting</h3>
+            <p>Automate models, comps, rent rolls, and sensitivity scenarios. Human‑in‑the‑loop workflows keep you in control.</p>
+            <div class="kpi"><b>75%</b><span class="muted">faster underwriting</span></div>
+          </div>
+          <div class="card feature">
+            <h3>Portfolio Intelligence</h3>
+            <p>Monitor asset KPIs, risk flags, and market drift. Get proactive alerts and recommendations you can act on.</p>
+            <div class="kpi"><b>24/7</b><span class="muted">signal monitoring</span></div>
+          </div>
+        </div>
+
+        <div class="split" style="margin-top:28px">
+          <div class="card feature">
+            <h3>Integrations</h3>
+            <p>We connect to your spreadsheets, CRMs, property management tools, and data providers to fit your stack.</p>
+            <div class="stack" style="margin-top:8px">
+              <span class="pill">Excel/Sheets</span>
+              <span class="pill">Salesforce/HubSpot</span>
+              <span class="pill">PM & rent roll tools</span>
+              <span class="pill">Market data APIs</span>
+            </div>
+          </div>
+          <div class="card feature">
+            <h3>Security & Privacy</h3>
+            <p>Dedicated, private deployments with strict access controls. Your data stays yours—full auditability and role-based permissions.</p>
+            <p class="muted">We never train shared models on your proprietary data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container split">
+        <div class="card contact-card">
+          <h2>Contact</h2>
+          <p class="muted">Tell us about your goals and current workflow. We’ll propose a focused pilot that delivers ROI in weeks—not months.</p>
+
+          <!-- Replace the email below with your preferred address -->
+          <form action="mailto:please-replace-with-your-email@example.com" method="post" enctype="text/plain">
+            <div class="row">
+              <p>
+                <label for="name">Name</label><br>
+                <input id="name" name="Name" placeholder="Your name" required>
+              </p>
+              <p>
+                <label for="company">Company</label><br>
+                <input id="company" name="Company" placeholder="Your company">
+              </p>
+            </div>
+            <p>
+              <label for="email">Email</label><br>
+              <input id="email" name="Email" type="email" placeholder="you@company.com" required>
+            </p>
+            <p>
+              <label for="message">How can we help?</label><br>
+              <textarea id="message" name="Message" placeholder="Briefly describe your use case"></textarea>
+            </p>
+            <button class="btn" type="submit">Send</button>
+            <p class="legal">Submitting opens your email client. For production use, connect this form to your CRM or an email service.</p>
+          </form>
+        </div>
+
+        <div class="card contact-card" aria-labelledby="address-title">
+          <h2 id="address-title">Company Details</h2>
+          <p><strong>Mieszkania Properties Ltd</strong><br>
+             Collingwood Buildings<br>
+             38 Collingwood Street<br>
+             Newcastle Upon Tyne<br>
+             NE1 1JF<br>
+          </p>
+          <p>
+            <a class="map-link" href="https://maps.google.com/?q=Collingwood%20Buildings%2C%2038%20Collingwood%20Street%2C%20Newcastle%20Upon%20Tyne%2C%20NE1%201JF" target="_blank" rel="noopener">View on Google Maps
+              <span aria-hidden="true">↗</span>
+            </a>
+          </p>
+          <hr style="border:none;border-top:1px solid #eceffa; margin:18px 0">
+          <p class="muted">Looking to partner or invest? <a href="#contact">Get in touch</a>—we’d love to talk.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap">
+        <span>© <span id="year"></span> Mieszkania Properties Ltd</span>
+        <span>Built with accessibility and privacy in mind.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
